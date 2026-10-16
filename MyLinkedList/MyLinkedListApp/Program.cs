@@ -37,7 +37,18 @@ class Program
             }
         }
 
+        Console.WriteLine($"Bücherliste:");
         Console.WriteLine(list);
+        
+        MyLinkedList<int> intList = new MyLinkedList<int>();
+
+        intList.AddAtEnd(10);
+        intList.AddAtEnd(3);
+        intList.AddAtEnd(22);
+        intList.AddAtEnd(8);
+
+        Console.WriteLine($"\nZahlenliste:");
+        Console.WriteLine(intList);
         
     }
 }
